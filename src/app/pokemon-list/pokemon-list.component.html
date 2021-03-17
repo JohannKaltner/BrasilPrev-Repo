@@ -1,0 +1,34 @@
+ 
+<style>
+ 
+</style>
+<app-layout>
+<app-pokemon-loading [isLoading]='isLoading'></app-pokemon-loading>
+<div class="container-teste"> 
+  <div >
+    <div class="row-self">
+        <div class='deck' *ngFor="let pokemon of pokemonGrid">
+          <div class="card-deck-self">
+            <div class="card-body-self">
+              <div class="card-header-self">
+                <img src="{{pokemon.imageUrl}}" alt="{{pokemon.name}}">
+                <a [routerLink]="['/pokemon', pokemon.id]">
+                  <div class="card-body-self">
+                    <h6 class="card-text-self">{{pokemon.name}}</h6>
+                    <div *ngFor="let type of pokemon.types">
+                      {{ type }}
+                    </div> 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class='button-container-self'>
+      <button class='button-prev' (click)="setPage('decrement')"> < </button>
+      <button class='button-next' (click)="setPage('increment')"> > </button>
+    </div>
+  </div>
+</app-layout>

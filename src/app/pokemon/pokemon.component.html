@@ -1,0 +1,46 @@
+<app-layout>
+  <span *ngIf="error">
+    Loading failed
+  </span> 
+    <div class="container-teste ">
+      <div class="row-self"> 
+          <div class="card-self">
+            <div class="card-body-self">  
+              <img class="card-img-self" src="{{pokemon.imageUrlHiRes}}" alt="{{pokemon.name}}">
+            </div> 
+            
+          <h1>  {{ pokemon.name }}</h1> 
+            <div class="card-body-self ">
+              <h5 >Tipo:</h5> 
+                <div *ngFor="let type of pokemon.types">
+                  {{ type }}
+                </div> 
+            </div> 
+            <div class="card-body-self"> 
+              <h5>Ataques:</h5>
+              <ul class="list-self">
+                <li *ngFor="let attacks of pokemon.attacks">
+                  <hr>
+                   <b> {{ attacks.name }}</b> 
+                   <br>
+                   <div *ngIf="attacks.text !=='' "> 
+                     <span ><b>Descrição: </b>{{ attacks.text }}</span>
+                    </div> 
+                  <span *ngIf="attacks.damage !=='' "><b>Dano: </b>{{ attacks.damage }}</span> 
+                </li>
+              </ul> 
+            </div>  
+            <div class="card-body-self"> 
+              <h5>Fraquezas:</h5>
+              <ul class="list-self">
+                <li *ngFor="let weak of pokemon.weaknesses"> 
+                   <div *ngIf="weak.type !=='' "> 
+                     <span ><b>Tipo: </b>{{ weak.type }}</span>
+                    </div>   
+                </li>
+              </ul> 
+            </div>  
+        </div>
+      </div>
+    </div> 
+</app-layout>

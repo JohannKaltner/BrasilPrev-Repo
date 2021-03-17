@@ -1,0 +1,108 @@
+.checkbox-container {
+  font-size: 1.3rem
+  ;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.fa-star {
+color: #ffbf00;
+}
+
+.fa-star-o {
+color: #ffbf00;
+}
+
+.type-normal {
+  background-color: #a8a878;
+}
+
+.type-fire {
+  background-color: #f08030;
+}
+
+.type-fighting {
+  background-color: #c03028;
+}
+
+.type-water {
+  background-color: #6890f0;
+}
+
+.type-flying {
+  background-color: #a890f0;
+}
+
+.type-grass {
+  background-color: #78c850;
+}
+
+.type-poison {
+  background-color: #a040a0;
+}
+
+.type-electric {
+  background-color: #f8d030;
+}
+
+.type-ground {
+  background-color: #e0c068;
+}
+
+.type-psychic {
+  background-color: #f85888;
+}
+
+.type-rock {
+  background-color: #b8a038;
+}
+
+.type-ice {
+  background-color: #98d8d8;
+}
+
+.type-bug {
+  background-color: #a8b820;
+}
+
+.type-dragon {
+  background-color: #7038f8;
+}
+
+
+
+.container-teste{
+  justify-content: center;
+  width:100%;
+  height:100vh;
+}
+.row-self{
+  justify-content:center;
+  display:flex
+  } 
+  .card-body-self{
+    border-radius:7px;
+    margin:30px;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: rgb(253, 247, 247);
+  }
+  .list-self{
+    padding-left: 0;
+    list-style: none;
+  }
+  .card-img-self{
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+  img{
+    vertical-align: middle;
+    border-style: none;
+  }
+ 

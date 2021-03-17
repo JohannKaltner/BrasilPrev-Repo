@@ -1,0 +1,116 @@
+ 
+
+img{
+  vertical-align: middle;
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-self {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;    
+  text-align: center !important;
+}
+.card-body-self{
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+@media (min-width: 576px) {
+  .card-deck-self {
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+  }
+}
+.card-deck-self{
+  display: flex !important;
+  flex-direction: column;
+  flex-flow: row wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.card-header-self{
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.container-teste{
+  justify-content: center;
+  width:100%;
+  height:100vh;
+}
+.row-self {
+  width:100%;
+  height:100%;
+  display: grid;
+grid-template-columns: auto auto auto;
+}
+.deck {
+  margin-bottom: 30px;
+  margin-left: 50px;
+  width:250px; 
+  justify-content: center; 
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .row-self { 
+  display: block;
+  justify-content: center;
+/* grid-template-columns: auto auto auto; */
+}
+}
+
+.button-container-self{
+  float: right;
+  width: 600px; 
+  display:flex;
+  position: relative;
+}
+.button-next{
+      width: 50%; 
+      background-color:#343a40 ;
+      border-radius: 5px;
+      padding:5px;
+      border: 1px #cccccc;
+      color: #eeeeee;
+      text-align: center; 
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+}
+.button-prev{
+  width: 50%; 
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+      border: 1px solid #9b9b9b; 
+      text-align: center; 
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+}
+
+@media (max-width: 576px) { 
+.button-container-self{
+  float: right;
+  width: 300px; 
+  display:flex;
+  position: relative;
+}
+}
